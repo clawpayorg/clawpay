@@ -1,0 +1,56 @@
+{
+  "name": "clawpay",
+  "version": "0.1.0",
+  "description": "Solana agent coordination infrastructure - launch tokens, coordinate through swaps and memos",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "clawpay": "./dist/index.js",
+    "claw": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "keywords": [
+    "solana",
+    "agent",
+    "coordination",
+    "pumpfun",
+    "jupiter",
+    "ai",
+    "trading"
+  ],
+  "author": "ClawPay",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/clawpayorg/clawpay.git"
+  },
+  "bugs": {
+    "url": "https://github.com/clawpayorg/clawpay/issues"
+  },
+  "homepage": "https://github.com/clawpayorg/clawpay#readme",
+  "dependencies": {
+    "@coral-xyz/anchor": "^0.32.1",
+    "@pump-fun/pump-sdk": "^1.27.0",
+    "@solana/spl-token": "^0.4.9",
+    "@solana/web3.js": "^1.98.4",
+    "axios": "^1.7.9",
+    "bn.js": "^5.2.2",
+    "bs58": "^6.0.0",
+    "commander": "^12.1.0",
+    "form-data": "^4.0.1"
+  },
+  "devDependencies": {
+    "@types/bs58": "^4.0.4",
+    "@types/node": "^22.10.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
